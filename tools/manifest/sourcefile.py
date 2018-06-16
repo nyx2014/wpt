@@ -254,7 +254,7 @@ class SourceFile(object):
                 self.name_prefix("MANIFEST") or
                 self.filename.startswith(".") or
                 self.filename == "OWNERS" or
-                self.filename == "NOTIFY" or
+                self.filename == "META.yml" or
                 self.type_flag == "support" or
                 self.in_non_test_dir())
 
