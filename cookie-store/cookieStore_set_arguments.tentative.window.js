@@ -160,7 +160,7 @@ promise_test(async testCase => {
     await cookieStore.delete('cookie-name');
     await cookieStore.delete('cookie-name', { domain: currentDomain });
   });
-}, 'cookieStore.set default domain is current hostname');
+}, 'cookieStore.set default domain is null, scoping cookie to current host');
 
 promise_test(async testCase => {
   const currentUrl = new URL(self.location.href);
